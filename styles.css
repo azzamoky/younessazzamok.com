@@ -1,3 +1,4 @@
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -37,6 +38,7 @@ nav ul {
     margin: 0;
     padding: 0;
     display: flex;
+    flex-wrap: wrap;
 }
 
 nav ul li {
@@ -115,4 +117,45 @@ footer {
 
 .video h3 {
     margin: 10px 0;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    nav .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    nav ul li a {
+        padding: 15px;
+        border-top: 1px solid #444;
+        border-bottom: 1px solid #444;
+    }
+
+    header h1 {
+        font-size: 1.8em;
+    }
+
+    header h2 {
+        font-size: 1em;
+    }
+
+    .service {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .service img {
+        margin: 0 0 10px 0;
+    }
 }
