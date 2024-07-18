@@ -31,6 +31,7 @@ nav {
 nav .container {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 nav ul {
@@ -38,10 +39,12 @@ nav ul {
     margin: 0;
     padding: 0;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    overflow-x: auto;
 }
 
 nav ul li {
+    flex: none;
     margin: 0;
     padding: 0;
 }
@@ -51,6 +54,7 @@ nav ul li a {
     text-decoration: none;
     padding: 10px 20px;
     display: block;
+    white-space: nowrap;
 }
 
 nav ul li a:hover {
