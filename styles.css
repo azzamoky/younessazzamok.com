@@ -33,6 +33,10 @@ nav .menu-icon {
     float: right;
 }
 
+nav input[type="checkbox"] {
+    display: none;
+}
+
 nav ul {
     list-style: none;
     padding: 0;
@@ -98,17 +102,13 @@ footer {
 }
 
 @media (max-width: 768px) {
-    nav ul {
-        display: none;
-        flex-direction: column;
-    }
-
     nav .menu-icon {
         display: block;
     }
 
-    nav ul.show {
-        display: flex;
+    nav ul {
+        display: none;
+        flex-direction: column;
     }
 
     nav ul li {
@@ -118,5 +118,9 @@ footer {
 
     nav ul li a {
         padding: 10px;
+    }
+
+    nav input[type="checkbox"]:checked + .menu-icon + ul {
+        display: flex;
     }
 }
