@@ -22,12 +22,22 @@ header {
 nav {
     background: #444;
     color: #fff;
+    position: relative;
+}
+
+nav .menu-icon {
+    display: none;
+    font-size: 2em;
+    cursor: pointer;
+    padding: 10px;
+    float: right;
 }
 
 nav ul {
     list-style: none;
     padding: 0;
     text-align: center;
+    margin: 0;
 }
 
 nav ul li {
@@ -52,12 +62,14 @@ section {
 
 section h2 {
     text-align: center;
+    color: #222;
 }
 
 section p, section ul {
     text-align: center;
     max-width: 800px;
     margin: 0 auto;
+    color: #444;
 }
 
 section img {
@@ -76,6 +88,9 @@ footer {
 
 .service {
     margin: 20px 0;
+    border: 1px solid #ddd;
+    padding: 10px;
+    background: #fff;
 }
 
 .service-content {
@@ -83,6 +98,19 @@ footer {
 }
 
 @media (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+    }
+
+    nav .menu-icon {
+        display: block;
+    }
+
+    nav ul.show {
+        display: flex;
+    }
+
     nav ul li {
         display: block;
         margin: 5px 0;
