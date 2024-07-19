@@ -1,10 +1,8 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const apiKey = "YOUR_API_KEY"; // You need to get an API key from a service like Aladhan (https://aladhan.com/prayer-times-api)
-    
     const prayerTimesEndpoints = {
-        rabat: `https://api.aladhan.com/v1/timingsByCity?city=Rabat&country=Morocco&method=2&key=${apiKey}`,
-        isabela: `https://api.aladhan.com/v1/timingsByCity?city=Isabela&country=Puerto%20Rico&method=2&key=${apiKey}`,
-        nyc: `https://api.aladhan.com/v1/timingsByCity?city=New%20York&country=USA&method=2&key=${apiKey}`,
+        rabat: "http://api.aladhan.com/v1/timingsByCity?city=Rabat&country=Morocco&method=2",
+        isabela: "http://api.aladhan.com/v1/timingsByCity?city=Isabela&country=Puerto%20Rico&method=2",
+        nyc: "http://api.aladhan.com/v1/timingsByCity?city=New%20York&country=USA&method=2",
     };
 
     const fetchPrayerTimes = async (endpoint, elementId) => {
