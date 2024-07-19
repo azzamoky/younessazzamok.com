@@ -1,30 +1,14 @@
 // scripts.js
 
-function checkAnswers() {
-    const correctAnswers = {
-        q1: 'a',
-        q2: 'b',
-        q3: 'a',
-        q4: 'b',
-        q5: 'a',
-        q6: 'a',
-        q7: 'a',
-        q8: 'c',
-        q9: 'a',
-        q10: 'a'
-    };
+document.addEventListener('DOMContentLoaded', function() {
+    const menuToggle = document.getElementById('menu-toggle');
+    const menu = document.getElementById('menu');
 
-    const form = document.getElementById('quizForm');
-    let score = 0;
-    let total = 10;
-
-    for (let [question, answer] of Object.entries(correctAnswers)) {
-        const selected = form.querySelector(`input[name="${question}"]:checked`);
-        if (selected && selected.value === answer) {
-            score++;
+    menuToggle.addEventListener('change', function() {
+        if (menuToggle.checked) {
+            menu.style.display = 'flex';
+        } else {
+            menu.style.display = 'none';
         }
-    }
-
-    const results = document.getElementById('results');
-    results.innerHTML = `You scored ${score} out of ${total}.`;
-}
+    });
+});
