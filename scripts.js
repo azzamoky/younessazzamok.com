@@ -1,3 +1,4 @@
+// scripts.js
 function checkAnswers() {
     const answers = {
         q1: 'a',
