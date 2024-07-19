@@ -3,92 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Youness Azzamok - Salesforce Mentor and Instructor</title>
+    <title>Salesforce Administrator Practice Exam</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
 </head>
 <body>
     <header>
         <div class="container">
-            <h1>Youness Azzamok</h1>
-            <h2>Advanced Salesforce Certified Mentor and Instructor</h2>
+            <h1>Salesforce Administrator Practice Exam</h1>
         </div>
     </header>
 
-    <nav>
+    <section id="exam">
         <div class="container">
-            <input type="checkbox" id="menu-toggle">
-            <label for="menu-toggle" class="menu-icon">&#9776;</label>
-            <ul id="menu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="resume.html">Resume and Credentials</a></li>
-                <li><a href="getting-started.html">Getting Started with Salesforce</a></li>
-                <li><a href="certification-study-guides.html">Certification Study Guides</a></li>
-                <li><a href="step-by-step-tutorials.html">Step by Step Tutorials</a></li>
-                <li><a href="video-tutorials.html">Video Tutorials</a></li>
-                <li><a href="practice-exams.html">Salesforce Practice Exams</a></li>
-                <li><a href="helpful-resources.html">Helpful Resources</a></li>
-                <li><a href="faq.html">FAQ</a></li>
-                <li><a href="about.html">About Me</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
+            <form id="quizForm">
+                <h2>Question 1: What is Salesforce?</h2>
+                <label><input type="radio" name="q1" value="a"> A CRM platform</label><br>
+                <label><input type="radio" name="q1" value="b"> A programming language</label><br>
+                <label><input type="radio" name="q1" value="c"> A database management system</label><br>
 
-    <section id="about">
-        <div class="container">
-            <h2>About Me</h2>
-            <p>Hello, I'm Youness Azzamok, an advanced Salesforce certified professional with extensive experience in mentoring and training. With a deep understanding of Salesforce's capabilities, I specialize in helping organizations leverage Salesforce to drive business success. I also provide comprehensive training to aspiring Salesforce administrators, helping them pass certification exams and become proficient in their roles.</p>
-            <img src="images/youness-azzamok.jpg" alt="Youness Azzamok">
-        </div>
-    </section>
+                <h2>Question 2: What is the primary function of Salesforce's Sales Cloud?</h2>
+                <label><input type="radio" name="q2" value="a"> Marketing automation</label><br>
+                <label><input type="radio" name="q2" value="b"> Sales process automation</label><br>
+                <label><input type="radio" name="q2" value="c"> Customer support</label><br>
 
-    <section id="services">
-        <div class="container">
-            <h2>Services</h2>
-            <div class="service">
-                <img src="images/salesforce-mentoring.jpg" alt="Salesforce Mentoring">
-                <div class="service-content">
-                    <h3>Salesforce Mentoring</h3>
-                    <p>As a Salesforce mentor, I provide personalized guidance to help you navigate the complexities of Salesforce. Whether you are a beginner or an experienced user, I can help you enhance your skills and maximize your use of Salesforce.</p>
-                </div>
-            </div>
-            <div class="service">
-                <img src="images/salesforce-training.jpg" alt="Salesforce Training">
-                <div class="service-content">
-                    <h3>Salesforce Training</h3>
-                    <p>My Salesforce training programs are designed to equip you with the knowledge and skills needed to become a competent Salesforce administrator. I offer both one-on-one and group training sessions tailored to your needs.</p>
-                </div>
-            </div>
-            <div class="service">
-                <img src="images/salesforce-certification.jpg" alt="Salesforce Certification">
-                <div class="service-content">
-                    <h3>Certification Preparation</h3>
-                    <p>I provide comprehensive support for those preparing for Salesforce certification exams. With my guidance, you can confidently approach the exams and achieve your certification goals.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+                <h2>Question 3: What is an object in Salesforce?</h2>
+                <label><input type="radio" name="q3" value="a"> A specific type of data like accounts or contacts</label><br>
+                <label><input type="radio" name="q3" value="b"> A piece of code</label><br>
+                <label><input type="radio" name="q3" value="c"> A user profile</label><br>
 
-    <section id="certifications">
-        <div class="container">
-            <h2>Certifications</h2>
-            <ul>
-                <li>Salesforce Certified Administrator</li>
-                <li>Salesforce Certified Advanced Administrator</li>
-                <li>Salesforce Certified Platform App Builder</li>
-                <li>Salesforce Certified Sales Cloud Consultant</li>
-                <li>Salesforce Certified Service Cloud Consultant</li>
-            </ul>
-            <img src="images/salesforce-certifications.jpg" alt="Salesforce Certifications">
-        </div>
-    </section>
+                <h2>Question 4: Which of the following is a standard object in Salesforce?</h2>
+                <label><input type="radio" name="q4" value="a"> Invoice</label><br>
+                <label><input type="radio" name="q4" value="b"> Opportunity</label><br>
+                <label><input type="radio" name="q4" value="c"> Employee</label><br>
 
-    <section id="contact">
-        <div class="container">
-            <h2>Contact</h2>
-            <p>If you are looking for a seasoned Salesforce professional to help you or your organization, please reach out to me. I am eager to help you achieve your Salesforce goals.</p>
-            <p>Email: <a href="mailto:youness.azzamok@example.com">youness.azzamok@example.com</a></p>
-            <p>Phone: (123) 456-7890</p>
+                <h2>Question 5: What does a role hierarchy control in Salesforce?</h2>
+                <label><input type="radio" name="q5" value="a"> Record visibility</label><br>
+                <label><input type="radio" name="q5" value="b"> User permissions</label><br>
+                <label><input type="radio" name="q5" value="c"> Field accessibility</label><br>
+
+                <h2>Question 6: What is a custom object in Salesforce?</h2>
+                <label><input type="radio" name="q6" value="a"> An object defined by the user</label><br>
+                <label><input type="radio" name="q6" value="b"> A standard Salesforce object</label><br>
+                <label><input type="radio" name="q6" value="c"> A predefined role</label><br>
+
+                <h2>Question 7: What is a Salesforce report?</h2>
+                <label><input type="radio" name="q7" value="a"> A compiled list of records meeting certain criteria</label><br>
+                <label><input type="radio" name="q7" value="b"> A summary of user activities</label><br>
+                <label><input type="radio" name="q7" value="c"> A detailed object schema</label><br>
+
+                <h2>Question 8: Which tool is used to import data into Salesforce?</h2>
+                <label><input type="radio" name="q8" value="a"> Data Loader</label><br>
+                <label><input type="radio" name="q8" value="b"> Data Import Wizard</label><br>
+                <label><input type="radio" name="q8" value="c"> Both A and B</label><br>
+
+                <h2>Question 9: What does Salesforce Chatter enable users to do?</h2>
+                <label><input type="radio" name="q9" value="a"> Communicate and collaborate in real-time</label><br>
+                <label><input type="radio" name="q9" value="b"> Track sales opportunities</label><br>
+                <label><input type="radio" name="q9" value="c"> Automate workflows</label><br>
+
+                <h2>Question 10: What is a validation rule in Salesforce?</h2>
+                <label><input type="radio" name="q10" value="a"> A rule to enforce data integrity</label><br>
+                <label><input type="radio" name="q10" value="b"> A rule to manage user permissions</label><br>
+                <label><input type="radio" name="q10" value="c"> A rule to schedule automated reports</label><br>
+
+                <input type="button" value="Submit" onclick="checkAnswers()">
+            </form>
+            <div id="results"></div>
         </div>
     </section>
 
