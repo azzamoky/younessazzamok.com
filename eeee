@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salesforce Administrator Practice Exam</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Salesforce Administrator Practice Exam</h1>
+        </div>
+    </header>
+
+    <section id="exam">
+        <div class="container">
+            <form id="quizForm">
+                <h2>Question 1: What is Salesforce?</h2>
+                <label><input type="radio" name="q1" value="a"> A CRM platform</label><br>
+                <label><input type="radio" name="q1" value="b"> A programming language</label><br>
+                <label><input type="radio" name="q1" value="c"> A database management system</label><br>
+
+                <h2>Question 2: What is the primary function of Salesforce's Sales Cloud?</h2>
+                <label><input type="radio" name="q2" value="a"> Marketing automation</label><br>
+                <label><input type="radio" name="q2" value="b"> Sales process automation</label><br>
+                <label><input type="radio" name="q2" value="c"> Customer support</label><br>
+
+                <h2>Question 3: What is an object in Salesforce?</h2>
+                <label><input type="radio" name="q3" value="a"> A specific type of data like accounts or contacts</label><br>
+                <label><input type="radio" name="q3" value="b"> A piece of code</label><br>
+                <label><input type="radio" name="q3" value="c"> A user profile</label><br>
+
+                <h2>Question 4: Which of the following is a standard object in Salesforce?</h2>
+                <label><input type="radio" name="q4" value="a"> Invoice</label><br>
+                <label><input type="radio" name="q4" value="b"> Opportunity</label><br>
+                <label><input type="radio" name="q4" value="c"> Employee</label><br>
+
+                <h2>Question 5: What does a role hierarchy control in Salesforce?</h2>
+                <label><input type="radio" name="q5" value="a"> Record visibility</label><br>
+                <label><input type="radio" name="q5" value="b"> User permissions</label><br>
+                <label><input type="radio" name="q5" value="c"> Field accessibility</label><br>
+
+                <h2>Question 6: What is a custom object in Salesforce?</h2>
+                <label><input type="radio" name="q6" value="a"> An object defined by the user</label><br>
+                <label><input type="radio" name="q6" value="b"> A standard Salesforce object</label><br>
+                <label><input type="radio" name="q6" value="c"> A predefined role</label><br>
+
+                <h2>Question 7: What is a Salesforce report?</h2>
+                <label><input type="radio" name="q7" value="a"> A compiled list of records meeting certain criteria</label><br>
+                <label><input type="radio" name="q7" value="b"> A summary of user activities</label><br>
+                <label><input type="radio" name="q7" value="c"> A detailed object schema</label><br>
+
+                <h2>Question 8: Which tool is used to import data into Salesforce?</h2>
+                <label><input type="radio" name="q8" value="a"> Data Loader</label><br>
+                <label><input type="radio" name="q8" value="b"> Data Import Wizard</label><br>
+                <label><input type="radio" name="q8" value="c"> Both A and B</label><br>
+
+                <h2>Question 9: What does Salesforce Chatter enable users to do?</h2>
+                <label><input type="radio" name="q9" value="a"> Communicate and collaborate in real-time</label><br>
+                <label><input type="radio" name="q9" value="b"> Track sales opportunities</label><br>
+                <label><input type="radio" name="q9" value="c"> Automate workflows</label><br>
+
+                <h2>Question 10: What is a validation rule in Salesforce?</h2>
+                <label><input type="radio" name="q10" value="a"> A rule to enforce data integrity</label><br>
+                <label><input type="radio" name="q10" value="b"> A rule to manage user permissions</label><br>
+                <label><input type="radio" name="q10" value="c"> A rule to schedule automated reports</label><br>
+
+                <input type="button" value="Submit" onclick="checkAnswers()">
+            </form>
+            <div id="results"></div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Youness Azzamok. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
