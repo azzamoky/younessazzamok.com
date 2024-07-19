@@ -1,6 +1,7 @@
 // scripts.js
+
 function checkAnswers() {
-    const answers = {
+    const correctAnswers = {
         q1: 'a',
         q2: 'b',
         q3: 'a',
@@ -13,16 +14,17 @@ function checkAnswers() {
         q10: 'a'
     };
 
-    let score = 0;
     const form = document.getElementById('quizForm');
-    const results = document.getElementById('results');
-    const formData = new FormData(form);
+    let score = 0;
+    let total = 10;
 
-    for (const [question, answer] of formData.entries()) {
-        if (answers[question] === answer) {
+    for (let [question, answer] of Object.entries(correctAnswers)) {
+        const selected = form.querySelector(`input[name="${question}"]:checked`);
+        if (selected && selected.value === answer) {
             score++;
         }
     }
 
-    results.innerHTML = `You scored ${score} out of 10.`;
+    const results = document.getElementById('results');
+    results.innerHTML = `You scored ${score} out of ${total}.`;
 }
